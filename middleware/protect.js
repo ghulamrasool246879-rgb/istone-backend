@@ -22,7 +22,6 @@ const protect = async (req, res, next) => {
       }
 
       next();
-
     } catch (error) {
       return res.status(401).json({
         message: "Not authorized. Invalid token.",
@@ -35,4 +34,4 @@ const protect = async (req, res, next) => {
   }
 };
 
-export default protect;s
+export default protect;
